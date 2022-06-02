@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var game = Game()
     var body: some View {
         ZStack {
-            Color(.lightGray)
+            Color("BackgroundColor")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 Text("🎯🎯🎯\n put the bulleye as close as you can to".uppercased())
