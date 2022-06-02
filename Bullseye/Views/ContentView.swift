@@ -12,7 +12,9 @@ struct ContentView: View {
     @State private var sliderValue = 50.0
     @State private var game = Game()
     var body: some View {
-        VStack {
+        ZStack {
+            Color(.lightGray)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 Text("🎯🎯🎯\n put the bulleye as close as you can to".uppercased())
                     .bold()
