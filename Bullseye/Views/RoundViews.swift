@@ -31,8 +31,8 @@ struct RoundedImageViewsFilled: View {
             .foregroundColor(Color("ButtonFilledTextColor"))
             .frame(width: 56.0, height: 56.0)
             .background(
-            Circle()
-                .fill(Color("ButtonFilledBackgroundColor"))
+                Circle()
+                    .fill(Color("ButtonFilledBackgroundColor"))
             )
     }
 }
@@ -41,7 +41,7 @@ struct RoundRectTextView: View {
     var text: String
     
     var body: some View {
-       Text(text)
+        Text(text)
             .kerning(-0.2)
             .bold()
             .font(.title3)
