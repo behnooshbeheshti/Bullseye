@@ -17,7 +17,7 @@ class BullseyeTests: XCTestCase {
     
     override func tearDownWithError() throws {
         game = nil
-    }
+     }
     
     func testScorePositive() {
         let guess = game.target + 5
