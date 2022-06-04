@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct PointsView: View {
+    
+    @Binding var alertIsVibible: Bool
+    @Binding var sliderValue: Double
+    @Binding var game: Game
+    
     var body: some View {
         VStack(spacing: 10){
             InstructionText(text: "The slider's value is")

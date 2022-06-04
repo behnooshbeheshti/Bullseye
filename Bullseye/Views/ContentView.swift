@@ -17,8 +17,12 @@ struct ContentView: View {
             BackgroundView(game: $game)
             VStack {
                 InstractionsView(game: $game)
-                    .padding(.bottom, 100)
-                HitMeButton(alertIsVibible: $alertIsVibible, sliderValue: $sliderValue, game: $game)
+                    .padding(.bottom, alertIsVibible ? 0 : 100)
+                if alertIsVibible {
+                    PointsView()
+                } else {
+                    HitMeButton(alertIsVibible: $alertIsVibible, sliderValue: $sliderValue, game: $game)
+                }
             }
             SliderView(sliderValue: $sliderValue)
         }
@@ -75,14 +79,6 @@ struct HitMeButton: View {
             RoundedRectangle(cornerRadius: 21.0)
                 .strokeBorder(Color.white, lineWidth: 2.0)
         )
-        .alert(isPresented: $alertIsVibible, content: {
-            let roundedValue = Int(sliderValue.rounded())
-            let points = game.points(sliderValue: roundedValue)
-            
-            return Alert(title: Text("Hello there!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(points) points this round"), dismissButton: .default(Text("Awesome!")) {
-                game.startNewRound(points: points)
-            })
-        })
     }
 }
 
