@@ -19,7 +19,7 @@ struct ContentView: View {
                 InstractionsView(game: $game)
                     .padding(.bottom, alertIsVibible ? 0 : 100)
                 if alertIsVibible {
-                    PointsView()
+                    PointsView(alertIsVibible: $alertIsVibible, sliderValue: $sliderValue, game: $game)
                 } else {
                     HitMeButton(alertIsVibible: $alertIsVibible, sliderValue: $sliderValue, game: $game)
                 }
