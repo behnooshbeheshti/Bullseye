@@ -20,11 +20,16 @@ struct ContentView: View {
                     .padding(.bottom, alertIsVibible ? 0 : 100)
                 if alertIsVibible {
                     PointsView(alertIsVibible: $alertIsVibible, sliderValue: $sliderValue, game: $game)
+                        .transition(.scale)
                 } else {
                     HitMeButton(alertIsVibible: $alertIsVibible, sliderValue: $sliderValue, game: $game)
+                        .transition(.scale)
                 }
             }
-            SliderView(sliderValue: $sliderValue)
+            if !alertIsVibible {
+                SliderView(sliderValue: $sliderValue)
+                    .transition(.scale)
+            }
         }
     }
 }
@@ -61,7 +66,9 @@ struct HitMeButton: View {
     
     var body: some View {
         Button(action: {
-            alertIsVibible = true
+            withAnimation {
+                alertIsVibible = true
+            }
         }) {
             Text("Hit me".uppercased())
                 .bold()
