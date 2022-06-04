@@ -42,7 +42,7 @@
 		8B47C6C0284B6A700025B863 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		8BAD2D62283D2B80009AABF8 /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAD2D64283D2B80009AABF8 /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
-		8BB6ADCB2836985B00CD1D1C /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB6ADCB2836985B00CD1D1C /* Bull's Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB6ADCE2836985B00CD1D1C /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		8BB6ADD02836985B00CD1D1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BB6ADD22836985C00CD1D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		8BB6ADCC2836985B00CD1D1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BB6ADCB2836985B00CD1D1C /* Bullseye.app */,
+				8BB6ADCB2836985B00CD1D1C /* Bull's Eye.app */,
 				8BAD2D62283D2B80009AABF8 /* BullseyeTests.xctest */,
 			);
 			name = Products;
@@ -180,7 +180,7 @@
 			);
 			name = Bullseye;
 			productName = Bullseye;
-			productReference = 8BB6ADCB2836985B00CD1D1C /* Bullseye.app */;
+			productReference = 8BB6ADCB2836985B00CD1D1C /* Bull's Eye.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -448,8 +448,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mhp.jadval.Bullseye;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = BullsEye;
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,8 +477,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mhp.jadval.Bullseye;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = BullsEye;
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
